@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Archivo", sans-serif;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  input:-webkit-autofill {
+    @apply bg-clip-text;
+  }
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts/ArchivoNormal.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts/ArchivoItalic.woff2) format("woff2");
+}
